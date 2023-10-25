@@ -59,6 +59,8 @@ jobs:
         uses: actions/configure-pages@v3
         with:
           static_site_generator: next
+      - name: upload artifacts
+        uses: actions/upload-pages-artifact@v1
       - name: deploy
         id: deployment
         uses: actions/deploy-pages@v1
