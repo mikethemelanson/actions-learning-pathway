@@ -54,6 +54,7 @@ jobs:
         uses: actions/configure-pages@v3
         with:
           static_site_generator: next
+
       - run: npm install
       - run: npm run build    
       - name: upload artifacts
